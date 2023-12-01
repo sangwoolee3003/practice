@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* reset */
+* {margin: 0;padding: 0; box-sizing: border-box;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.wrap{
+    width: 100%;
+    min-width: 1700px;
+}
+
+
+header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+
+}
+
+.inner{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.gnb{
+    display: flex;
+    position: relative;
+    z-index: 10;
+}
+
+.dept01{
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.dept01:hover > a{
+    color: blue;
+}
+
+
+
+.dept02 {
+    display: none;
+    width: 100%;
+    padding-top: 20px;
+    transition: all 0.3s;
+}
+
+.dept02.on{
+    display: block;
+}
+
+
+.dept02 li + li {
+    margin-top: 5px;
+}
+
+
+.dept02.on li a {
+    display: block;
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-weight: 400; 
+    font-size: 15px; 
+    line-height: 20px;
+
+}
+
+
+
+.login_box a{
+    padding: 5px 20px;
+    background-color: #e5e5e5;
+    border-radius: 50px;
+}
+
+.gnb_bg{
+    width: 100%;
+    height: 0px;
+    background-color: aquamarine;
+    opacity: 0.2;
+    position: absolute;
+    left: 0px;
+    top: 70px;
+}
+
+
+.gnb_bg.on{
+    height: 300px;
+    transition: all 0.5s;
+}
