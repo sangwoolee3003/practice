@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0;padding: 0; box-sizing: border-box;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+
+
+
+
+.wrap{
+    width: 100%;
+    min-width: 1400px;
+    overflow: hidden;
+}
+
+.con01{
+    width: 100%;
+    height: 100vh;
+    /* padding: 100px 0; */
+    position: relative;
+    background-color: beige;
+}
+
+.swiper.mySwiper.con1{
+    width: 1400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.swiper-wrapper{
+    position: relative;
+}
+
+
+.swiper-slide.con01_slide:nth-child(1){
+    background-color: rgb(144, 109, 180);
+}
+
+.swiper-slide.con01_slide:nth-child(2){
+    background-color: rgb(131, 153, 51);
+}
+
+.swiper-slide.con01_slide:nth-child(3){
+    background-color: rgb(153, 151, 51);
+}
+
+.swiper-slide.con01_slide:nth-child(4){
+    background-color: rgb(78, 51, 153);
+}
+
+.swiper-slide.con01_slide:nth-child(5){
+    background-color: rgb(153, 109, 51);
+}
+
+
+
+.swiper-slide p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.swiper-pagination{
+
+}
+
+.swiper-button-next.con01_next{
+    position: absolute;
+    top: 10%;
+    right: 40%;
+    transform: translateX(-50%);
+}
+
+
+.swiper-button-prev.con01_prev{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+
+/* con02 */
+
+.con02{
+    width: 100%;
+    height: 100vh;
+    /* padding: 100px 0; */
+    position: relative;
+    background-color: rgb(228, 228, 120);
+}
+
+.swiper.mySwiper.con2{
+    width: 1400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.swiper-wrapper{
+    position: relative;
+}
+
+
+
+.swiper-slide.con02_slide:nth-child(1){
+    background-color: rgb(144, 109, 180);
+}
+
+.swiper-slide.con02_slide:nth-child(2){
+    background-color: rgb(131, 153, 51);
+}
+
+.swiper-slide.con02_slide:nth-child(3){
+    background-color: rgb(153, 151, 51);
+}
+
+.swiper-slide.con02_slide:nth-child(4){
+    background-color: rgb(78, 51, 153);
+}
+
+.swiper-slide.con02_slide:nth-child(5){
+    background-color: rgb(153, 109, 51);
+}
+
+
+
+.swiper-slide p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.swiper-pagination{
+
+}
+
+.swiper-button-next.con01_next{
+    position: absolute;
+    top: 10%;
+    right: 40%;
+    transform: translateX(-50%);
+}
+
+
+.swiper-button-prev.con01_prev{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: translateX(-50%);
+}
+
+
+
+
+/* 
+@media screen and (max-width:1200px) {
+    .wrap{min-width: initial;}
+
+    .swiper.mySwiper.con1{
+        width: 500px;
+    }
+    
+} */
