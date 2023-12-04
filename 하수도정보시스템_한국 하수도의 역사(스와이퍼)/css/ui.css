@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0;padding: 0; box-sizing: border-box;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+
+
+
+
+
+.wrap{
+    width: 100%;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.section{
+    margin: 50px 0 100px;
+}
+
+.title_box{
+    width: 850px;
+    margin: -230px auto 0;
+    border-radius: 15px;
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 5;
+}
+
+
+.title_box h2{
+    font-size: 35px;
+    margin-bottom: 80px;
+    font-weight: bold;
+    position: relative;
+}
+
+.title_box h2::before{
+    content: '';
+    width: 250px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 180%;
+    transform: translate(-50%, -50%);
+}
+
+.title_box h3{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 80px;
+}
+
+.title_box p{
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: -1px;
+}
+
+
+
+
+
+
+/* .section.con02 부분*/
+.section.con02{
+    width: 1010px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+
+.border_box{
+    width: 100%;
+    border: 1px solid #b6b6b6;
+    padding-bottom: 30px;
+
+}
+
+
+.section.con02 .title_box h2::before{
+    display: none;
+}
+
+
+.swiper.mySwiper.sec_con2{
+    width: 780px;
+    padding-top: 35px;
+}
+
+
+/* js에서(history1-pagination)이름을 정해줘야 위치 이동과 스타일 바꿀수 있음 */
+.sec_con2 .swiper-pagination.history1-pagination{
+    bottom: auto;
+    top: -5px;
+    
+}
+
+
+.sec_con2 .swiper-pagination.history1-pagination .swiper-pagination-bullet-active{
+    background-color: black;
+}
+
+
+/* js에서 이름을 정해줘야 위치 이동과 스타일 바꿀수 있음 */
+.swiper-button-prev.history1_prev{
+    left: 6px;
+    top: 72%;
+    color: black;
+}
+
+/* js에서 이름을 정해줘야 위치 이동과 스타일 바꿀수 있음 */
+.swiper-button-next.history1_next{
+    right: 6px;
+    top: 72%;
+    color: black;
+}
+
