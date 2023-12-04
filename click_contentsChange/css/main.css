@@ -17,11 +17,13 @@ button:focus {outline: none}
 
 .main{
     width: 100%;
+    min-width: 784px;
     height: 100vh;
     background:rgba(200, 200, 100,0.3);
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 
@@ -36,7 +38,7 @@ button:focus {outline: none}
 }
 
 .list_num{
-    width: 13%;
+    width: 150px;
     cursor: pointer;
     text-align: center;
     border: 1px solid black;
@@ -52,7 +54,7 @@ button:focus {outline: none}
 }
 
 .contents{
-    width: 85%;
+    width: 620px;
     border: 1px solid black;
 }
 
