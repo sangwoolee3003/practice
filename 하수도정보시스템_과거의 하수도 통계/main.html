@@ -12,6 +12,8 @@
 <body>
     <div class="wrap">
         <div class="inner">
+
+            <!-- top -->
             <div class="top">
                 <h2>과거의 하수도 통계</h2>
                 <div class="seaching">
@@ -27,6 +29,7 @@
                 </div>
             </div>
 
+            <!-- bottom -->
             <div class="bottom">
                 <p>총 게시물 <span class="blue">1,237</span>건</p>
                 <div class="table_01">
@@ -116,6 +119,8 @@
                 </div>
             </div>
 
+
+            <!-- num_list  -->
             <ul>
                 <li class="num prev">
                     <a href="#"><<</a>
@@ -154,6 +159,20 @@
                     <a href="#">>></a>
                 </li>
             </ul>
+        </div>
+    </div>
+
+
+    <!-- 첨부파일 부분 -->
+    <div class="test">
+        <div class="pr25">
+            <div class="mFile1">
+                <input type="text" class="it w100per" title="첨부파일">
+                <div class="btn2">
+                    <a href="###" class="mBtn1 gray">파일찾기</a>
+                    <input type="file" name="file_1" class="fileHidden" onchange="$(this).parent().prev().val( this.value );">
+                </div>
+            </div>
         </div>
     </div>
 </body>
