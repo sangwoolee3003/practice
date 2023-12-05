@@ -1,4 +1,4 @@
-// con02 스와이퍼
+// con01 스와이퍼
 $(function(){
 
     var swiper_con01 = new Swiper(".mySwiper.con1", {

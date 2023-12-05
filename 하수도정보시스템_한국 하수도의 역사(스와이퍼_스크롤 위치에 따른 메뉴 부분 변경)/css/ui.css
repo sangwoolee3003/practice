@@ -28,8 +28,10 @@ button:focus {outline: none}
     margin: 0 auto;
 }
 
-.section{
-    margin: 50px 0 100px;
+.section.con01{
+    margin: 50px 0 300px;
+    /* background-color: aliceblue; */
+
 }
 
 .title_box{
@@ -83,8 +85,9 @@ button:focus {outline: none}
 /* .section.con02 부분*/
 .section.con02{
     width: 1010px;
-    margin: 0 auto;
+    margin: 0 auto 300px;
     position: relative;
+    /* background-color: antiquewhite; */
 
 }
 
@@ -135,3 +138,108 @@ button:focus {outline: none}
     color: black;
 }
 
+
+
+
+
+
+
+
+/* .section.con03 부분*/
+.section.con03{
+    width: 1010px;
+    margin: 0 auto 300px;
+    position: relative;
+    /* background-color: antiquewhite; */
+}
+
+
+.section.con03 .title_box h2::before{
+    display: none;
+}
+
+
+.swiper.mySwiper.sec_con3{
+    width: 780px;
+    padding-top: 35px;
+}
+
+
+/* js에서(history1-pagination)이름을 정해줘야 위치 이동과 스타일 바꿀수 있음 */
+.sec_con3 .swiper-pagination.history2-pagination{
+    bottom: auto;
+    top: -5px;
+    
+}
+
+
+.sec_con3 .swiper-pagination.history2-pagination .swiper-pagination-bullet-active{
+    background-color: rgb(255, 0, 0);
+}
+
+
+/* js에서 이름을 정해줘야 위치 이동과 스타일 바꿀수 있음 */
+.swiper-button-prev.history2_prev{
+    left: 6px;
+    top: 72%;
+    color: rgb(255, 0, 0);
+}
+
+/* js에서 이름을 정해줘야 위치 이동과 스타일 바꿀수 있음 */
+.swiper-button-next.history2_next{
+    right: 6px;
+    top: 72%;
+    color: rgb(255, 0, 0);
+}
+
+
+
+
+
+
+/* nav 부분 */
+
+.nav{
+    width: 150px;
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 50;
+
+}
+
+.nav p{
+    font-size: 18px;
+    font-weight: 800;
+    padding-left: 20px;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.nav p:hover{
+    background-color: aliceblue;
+}
+
+.nav p.on{
+    background-color: aliceblue;
+}
+
+
+.nav p::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    left: 7px;
+    top: 11px;
+}
+
+
+
+.nav p + p{
+    margin-top: 20px;
+}
