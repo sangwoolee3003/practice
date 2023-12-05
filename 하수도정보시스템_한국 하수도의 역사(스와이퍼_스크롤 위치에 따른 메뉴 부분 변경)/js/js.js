@@ -87,7 +87,8 @@ $(function () {
 
 
 
-
+// 스크롤 위치 및 메뉴 클릭시 클래스 on 붙이는 제이쿼리 스크립트
+// https://www.youtube.com/watch?v=vh5hDOjeVvk
 
 $(function(){
     var menu = $('.nav p'),
