@@ -111,7 +111,7 @@ $(function () {
         contents.each(function () {
             if ($(this).offset().top <= $(window).scrollTop()) { //각 섹션의 탑값모다 스크롤 을 많이이하면
                 var idx = $(this).index(); //그 인덱스 번호를 가져오고
-                menu.removeClass('on'); // 다른데 붙은 on 제거하고
+                menu.removeClass('on'); // 모든 메뉴 항목에서 'on' 클래스를 제거합니다. 이는 현재 활성화된 메뉴 항목을 초기화하는 역할을 합니다.
                 menu.eq(idx).addClass('on'); // 현재 같은 메뉴 인덱스 번호의 클래스에 on 추가 해라
             }
         });
