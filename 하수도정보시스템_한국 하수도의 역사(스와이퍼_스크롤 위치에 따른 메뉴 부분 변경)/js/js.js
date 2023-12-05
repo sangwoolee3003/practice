@@ -90,25 +90,26 @@ $(function () {
 // 스크롤 위치 및 메뉴 클릭시 클래스 on 붙이는 제이쿼리 스크립트
 // https://www.youtube.com/watch?v=vh5hDOjeVvk
 
-$(function(){
+$(function () {
     var menu = $('.nav p'),
-        contents = $('.con');
+        contents = $('.section.con');
 
     // .nav p를 클릭하면 해당 요소에만 클래스명 on 추가
-    menu.click(function(){
+    menu.click(function () {
         menu.removeClass('on');
         $(this).addClass('on');
 
         // .nav p를 클릭하면 같은 인덱스 번호인 .section의 위치로 가기
-        var idx = $(this).index(); //idx은 변수 menu의 인덱스 번호
+        var idx = $(this).index(); //변수idx은  menu의 인덱스 번호
+
         var section = contents.eq(idx); //section은 변수 contents의 인덱스 번호인데 idx와 동일한 인덱스 번호를 가져와라는 뜻
         var sectionDistance = section.offset().top; //sectionDistance은 변수section의 top값 
-        $('html,body').stop().animate({scrollTop:sectionDistance});//.nav p 클릭시 같은 인덱스 번호인 섹션의 스크롤 길이 만큼 양을 줘서 해당 섹션으로 움직임
+        $('html,body').stop().animate({ scrollTop: sectionDistance });//.nav p 클릭시 같은 인덱스 번호인 섹션의 스크롤 길이 만큼 양을 줘서 해당 섹션으로 움직임
     });
 
-    $(window).scroll(function(){ //스크롤하면
-        contents.each(function(){
-            if($(this).offset().top <= $(window).scrollTop()){ //각 섹션의 탑값모다 스크롤 을 많이이하면
+    $(window).scroll(function () { //스크롤하면
+        contents.each(function () {
+            if ($(this).offset().top <= $(window).scrollTop()) { //각 섹션의 탑값모다 스크롤 을 많이이하면
                 var idx = $(this).index(); //그 인덱스 번호를 가져오고
                 menu.removeClass('on'); // 다른데 붙은 on 제거하고
                 menu.eq(idx).addClass('on'); // 현재 같은 메뉴 인덱스 번호의 클래스에 on 추가 해라
@@ -116,7 +117,6 @@ $(function(){
         });
     });
 });
-
 
 
 
