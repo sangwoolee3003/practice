@@ -171,10 +171,13 @@ header{
     margin: 0 auto;
 }
 
-/* 백그라운드로 넣어으면 화면 쭐어들때 안작아짐 */
+    /*object-fit: cover 하면 창 쭐여도 이미지 안찌그러짐  */
 .swiper-slide img{
+    /* display: block; */
     width: 100%;
     height: 100%;
+    object-fit: cover; 
+
 
 }
 
