@@ -16,3 +16,6 @@ $(function(){
         $('.bottom li:eq('+ index +')').toggleClass('on')
     })
 });
+
+
+

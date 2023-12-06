@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0;padding: 0; box-sizing: border-box;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+
+.wrap{
+    width: 100%;
+    height: 4000px;
+}
+
+
+header{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+}
+
+
+/* height 100% 주면 nav 높이를 가져서 호버시 오류 걸림 */
+.header_inner{
+    width: 95%;
+    min-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.header_left{
+    width: 65%;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+
+
+.nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 150px;
+}
+
+
+.dept_01{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.dept_01 a{
+    display: block;
+    position: relative;
+}
+
+.dept_01:hover > a{
+    border-bottom: 3px solid black;
+}
+
+
+.dept_02{
+    display: none;
+    width: 100%;
+    font-weight: 400;
+}
+
+.dept_02.on{
+    display: block;
+}
+
+.dept_02 li{
+    line-height: 60px;
+}
+
+.dept_02 li:hover{
+    color: orangered;
+}
+
+.header_right{
+    width: 7%;
+}
+
+
+.language{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+
+}
+
+.language li{
+    color: #d6d6d6;
+    font-weight: 500;
+}
+
+.language li.on{
+    color: orangered;
+    font-weight: 600;
+}
+
+
+.language a{
+    padding: 0 10px;
+}
+
+
+.language .kor a{
+    border-right: 1px solid #d6d6d6;
+}
+
+
+.nav_bg{
+    width: 100%;
+    height: 0px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: -1;
+    top: 80px;
+    border-top: 1px solid #ececec;
+}
+
+.nav_bg.on{
+    height: 250px;
+    transition: all .2s;
+    /* background-color: #949191; */
+
+}
+
+
+
+
+/* visual 부분 */
+.visual{
+    width: 100%;
+    margin-top: 80px;
+    background-size: cover;
+}
+
+
+.swiper.mySwiper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.swiper-slide{
+    position: relative;
+}
+
+/* 백그라운드로 넣어으면 화면 쭐어들때 안작아짐 그리고 높이 무조건 넣어줘야 이미지 들어감 */
+/* HTML에 IMG태그 주고 비주얼에 높이 잡아주고 아래 자식한테 높이 100% 주면 브라우저 쭐일때 사진도 같이 쭐어들어서 이미지 깨짐 복사본으로 예시 보셈*/
+.visaul_slide1 .box{
+    width: 100%;
+    height: 760px;
+    background-image: url(../img/visual1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+    background-color: rgb(68, 68, 68);
+}
+
+.visaul_slide2 .box{
+    width: 100%;
+    height: 760px;
+    background-image: url(../img/visual2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+    background-color: rgb(68, 68, 68);
+}
+
+.visaul_slide3 .box{
+    width: 100%;
+    height: 760px;
+    background-image: url(../img/visual3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+    background-color: rgb(68, 68, 68);
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+
+.title{
+    font-size: 55px;
+}
+
+.txt_right{
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+
+
+.txt_middle{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.txt_left{
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.swiper-button-next.visaul_next{
+    color: #ececec;
+    right: 5%;
+}
+
+.swiper-button-prev.visaul_prev{
+    color: #ececec;
+    left: 5%;
+}
+
+
+
+
+
+/* software 부분 */
+.sec{
+    width: 100%;
+    margin-top: 100px;
+
+}
+
+.inner{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.topBox{
+    width: 100%;
+}
+
+.topBox h3{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+
+.bottomBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.tt{
+    position: relative;
+    /* width: 710px;
+    height: 300px; */
+}
+
+.tt:nth-child(1){
+    margin-bottom: 30px;
+}
+
+.con_txt{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.con_txt img{
+    margin-bottom: 15px;
+}
+
+.con_txt p{
+    margin-bottom: 80px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.con_txt a{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.tt img.bg{
+    width: 100%;
+
+}
+
+.white{
+    color: white;
+}
+
+.gray{
+    color: gray;
+}
+
+
+.br{
+    position: relative;
+    /* width: 340px;
+    height: 630px; */
+}
+
+
+.con_txt2 img{
+    margin-bottom: 15px;
+}
+
+.con_txt2{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+
+}
+
+
+.con_txt2 p{
+    margin-bottom: 80px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.con_txt2 a{
+    font-size: 12px;
+    font-weight: 700;
+}

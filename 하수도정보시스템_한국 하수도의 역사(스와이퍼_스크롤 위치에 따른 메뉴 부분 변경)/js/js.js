@@ -91,8 +91,8 @@ $(function () {
 // https://www.youtube.com/watch?v=vh5hDOjeVvk
 
 $(function () {
-    var menu = $('.nav p'),
-        contents = $('.section.con');
+    var menu = $('.nav p');
+    var contents = $('.section.con');
 
     // .nav p를 클릭하면 해당 요소에만 클래스명 on 추가
     menu.click(function () {
@@ -119,6 +119,36 @@ $(function () {
 });
 
 
+
+
+// 나중에 붙여 쓸땐 이걸로
+// $(function () {
+//     var menu = $('.nav p');
+//     var contents = $('.section.con');
+
+
+//     menu.click(function () {
+//         menu.removeClass('on');
+//         $(this).addClass('on');
+
+
+//         var idx1 = $(this).index(); 
+//         var section = contents.eq(idx1); 
+//         var sectionDistance = section.offset().top;
+//         $('html,body').stop().animate({ scrollTop: sectionDistance });
+//     });
+
+    
+//     $(window).scroll(function () { 
+//         contents.each(function () {
+//             if ($(this).offset().top <= $(window).scrollTop()) { 
+//                 var idx2 = $(this).index();
+//                 menu.removeClass('on'); 
+//                 menu.eq(idx2).addClass('on'); 
+//             }
+//         });
+//     });
+// });
 
 
 
