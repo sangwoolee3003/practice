@@ -126,16 +126,25 @@ button:focus {outline: none}
 
 /* js에서 이름을 정해줘야 위치 이동과 스타일 바꿀수 있음 */
 .swiper-button-prev.history1_prev{
-    left: 6px;
+    width: 40px;
+    height: 40px;
+    left: -20px;
     top: 72%;
     color: black;
+    background: url(../img/btn_prev_on.png) no-repeat center;
+    /* background-color: antiquewhite; */
+    text-indent: -9999px;
 }
 
 /* js에서 이름을 정해줘야 위치 이동과 스타일 바꿀수 있음 */
 .swiper-button-next.history1_next{
-    right: 6px;
+    width: 40px;
+    height: 40px;
+    right: -20px;
     top: 72%;
     color: black;
+    background: url(../img/btn_next_on.png) no-repeat center;
+    text-indent: -9999px;
 }
 
 

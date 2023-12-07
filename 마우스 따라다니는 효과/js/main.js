@@ -31,6 +31,7 @@ $(function () {
     const div = $(".container");
 
     $(document).mousemove(function (e) {
+
         let x = e.clientX;
         let y = e.clientY;
 
