@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+
+
+    <style>
+        .view {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: blue;
+            text-align: center;
+            line-height: 150px;
+            font-size: 20px;
+            color: #fff;
+            z-index: 9999;
+            pointer-events: none;
+            transform: scale(0);
+            transition: transform .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .view.on {
+            transform: scale(1);
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+            background: #000;
+            transform: translate(-50%, -50%);
+        }
+
+        .container:hover {
+            background-color: red;
+            cursor: none;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="view">
+        <span>view</span>
+    </div>
+    <div class="container"></div>
+
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

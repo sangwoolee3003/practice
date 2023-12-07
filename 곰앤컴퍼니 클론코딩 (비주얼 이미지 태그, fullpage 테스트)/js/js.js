@@ -40,3 +40,15 @@ $(function () {
 
 
 
+
+// fullpage 사용시 풀페이지 사용 부분의 class를 section으로 지정해주고 div#fullpage로 묶어주어야함
+//https://jineecode.tistory.com/98
+$(function(){
+    $('#fullpage').fullpage({
+        scrollBar: true,
+        anchors: ['anchor1', 'anchor2', 'anchor3'],
+        menu: '#menu_circle',
+        responsiveWidth: 769,
+    });
+});
+
