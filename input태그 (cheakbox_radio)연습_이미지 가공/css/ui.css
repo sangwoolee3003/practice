@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0;padding: 0; box-sizing: border-box;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+
+
+.wrap{
+    /* width: 500px; */
+    width: 100%;
+    padding: 100px 0;
+    /* background-color: antiquewhite; */
+}
+
+
+/* checkbox 연습 부분*/
+.infoBox1{
+    width: 1000px;
+    margin: 0 auto 200px;
+}
+
+
+h1{
+    font-size: 20px;
+    padding-left: 20px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+h1::before{
+    content: '';
+    width: 4px;
+    height: 70%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(7, 7, 138);
+
+}
+
+.table_box{
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #eee;
+    border-collapse: collapse;
+}
+
+td, th{
+    height: 50px;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    padding: 0 20px;
+}
+
+th {
+    background-color: aliceblue;
+}
+
+
+.posit_box{
+    position: relative;
+}
+
+input[type="checkbox"]{
+    opacity: 0;
+}
+
+.imgbox{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+.imgbox::before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    background: url(../img/ico_checkbox.png) no-repeat center;
+}
+
+
+input[type="checkbox"]:checked+ .imgbox::before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    background: url(../img/ico_checkbox_on.png) no-repeat center;
+}
+
+
+
+
+
+
+/* radio 연습 부분*/
+.infoBox2{
+    width: 1000px;
+    margin: 0 auto 200px;
+}
+
+input[type="text"]{
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #d1d1d1;
+}
+
+
+.gender_box{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+input[type="radio"]{
+    opacity: 0;
+}
+
+.circle{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.circle::before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: url(../img/ico_radio.png) no-repeat center;
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    z-index: -1;
+} 
+
+input[type="radio"]:checked+ .circle::before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: url(../img/ico_radio_on.png) no-repeat center;
+    position: absolute;
+    left: 0%;
+    top: 10%;
+}
+
+
+
+
+
+
+
+
+
