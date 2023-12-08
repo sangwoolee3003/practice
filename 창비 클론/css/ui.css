@@ -21,13 +21,16 @@ button:focus {outline: none}
 .con01{
     width: 100%;
     padding-top: 200px;
+    /* background-color: antiquewhite; */
 }
 
 .inner{
-    width: 1700px;
+    width: 1600px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    /* background-color: aqua; */
+    /* padding: 0 50px; */
 }
 
 
@@ -54,20 +57,11 @@ button:focus {outline: none}
 }
 
 
-@media screen and (max-width:1500px) {
+@media screen and (max-width:1700px) {
     .inner{
-        width: 100%;
+        width: 90%;
         flex-wrap: wrap;
     }
 
-    .left{
-        width: 100%;
-    }
 
-    .right{
-        width: 100%;
-        text-align: center;
-    }
-
-    
 }
