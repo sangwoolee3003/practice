@@ -123,6 +123,7 @@ header.on{
 
 section{
     width: 100%;
+<<<<<<< HEAD
     padding: 200px 0;
     border-bottom: 1px solid #eee;
 }
@@ -130,9 +131,19 @@ section{
 .inner{
     /* width: 1700px; */
     width: 90%;
+=======
+    padding-top: 200px;
+    /* background-color: antiquewhite; */
+}
+
+.inner{
+    width: 1600px;
+>>>>>>> a5e6ee689223c3166c395e59595f354d3efb3f62
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    /* background-color: aqua; */
+    /* padding: 0 50px; */
 }
 
 
@@ -159,6 +170,7 @@ section{
 }
 
 
+<<<<<<< HEAD
 
 
 
@@ -211,13 +223,16 @@ section{
 @media screen and (max-width:1500px) {
     .inner{
 
+=======
+@media screen and (max-width:1700px) {
+    .inner{
+        width: 90%;
+>>>>>>> a5e6ee689223c3166c395e59595f354d3efb3f62
         flex-wrap: wrap;
     }
 
-    .left{
-        width: 100%;
-    }
 
+<<<<<<< HEAD
     .right{
         width: 100%;
         text-align: center;
@@ -247,4 +262,6 @@ section{
     .date{
         font-size: 13px;
     }
+=======
+>>>>>>> a5e6ee689223c3166c395e59595f354d3efb3f62
 }
