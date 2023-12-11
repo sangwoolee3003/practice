@@ -13,18 +13,123 @@ a:focus {outline: none}
 button:focus {outline: none}
 
 
+
+
+
+
+
+
+/* header */
+header{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid #eee;
+}
+
+header.on{
+    border-bottom: none;
+}
+
+.header_inner{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gnb{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 600px;
+    /* background-color: antiquewhite; */
+}
+
+.deps_01 > a{
+    color: #464646;
+    font-weight: bold;
+}
+
+
+
+/* 이렇게 높이주면 gnb호버시 .deps_01 배열 안흐뜨려짐 */
+.deps_02{
+    height: 0px;
+    overflow: hidden;
+    line-height: 60px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.deps_02.on{
+    height: 250px;
+}
+
+.deps_02 a:hover{
+    color: #797979;
+    font-weight: 800;
+}
+
+
+.gnb_bg{
+    width: 100%;
+    height: 0px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: -1;
+    transition: all 0.3s;
+}
+
+.gnb_bg.on{
+    height: 300px;
+    border-bottom: 1px solid #eee;
+}
+
+
+.serching{
+    position: relative;
+}
+
+.serching input{
+    /* width: 150px; */
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+    padding: 0 10px ;
+    background-color: #F2F3F4;
+}
+
+.serching a{
+    position: absolute;
+    right: 10px;
+}
+
+
+
+
+/* con01 부분 */
 .wrap{
     width: 100%;
     overflow: hidden;
+    height: 5000px;
 }
 
-.con01{
+section{
     width: 100%;
-    padding-top: 200px;
+    padding: 200px 0;
+    border-bottom: 1px solid #eee;
 }
 
 .inner{
-    width: 1700px;
+    /* width: 1700px; */
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -54,9 +159,58 @@ button:focus {outline: none}
 }
 
 
+
+
+
+/* con02 부분 */
+
+.list_box{
+    width: 55%;
+
+}
+
+.list_box li{
+    padding: 15px 0;
+}
+
+.list_box li:nth-child(1){
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;;
+}
+
+.list_box li + li{
+    border-bottom: 1px solid #eee;
+}
+
+.tit{
+    font-size: 20px;
+    font-weight: 600;
+    color: #2e2e2e;
+    margin-bottom: 10px;
+}
+
+
+.gray-box{
+    background-color: #eee;
+    font-size: 13px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: #464646;
+}
+
+
+.date{
+    font-size: 14px;
+    font-weight: 600;
+    color: #2e2e2e;
+}
+
+
+
 @media screen and (max-width:1500px) {
     .inner{
-        width: 100%;
+
         flex-wrap: wrap;
     }
 
@@ -69,5 +223,28 @@ button:focus {outline: none}
         text-align: center;
     }
 
-    
+    .list_box{
+        margin-top: 50px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:1000px){
+    .list_box{
+        width: 90%;
+    }
+
+
+    .tit{
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+
+    .date{
+        font-size: 13px;
+    }
 }

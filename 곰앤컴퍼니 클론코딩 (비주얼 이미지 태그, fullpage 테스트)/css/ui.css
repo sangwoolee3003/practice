@@ -110,12 +110,17 @@ header{
 
 
 .dept_02{
-    display: none;
+    overflow: hidden;
+    height: 0px;
+    opacity: 0;
     width: 100%;
     font-weight: 400;
 }
 
 .dept_02.on{
+    height: 250px;
+    opacity: 1;
+    transition: 0.3s;
     display: block;
 }
 

@@ -20,6 +20,7 @@ $(function(){
 
 
 
+
 // 끝지점 알림
 $(function(){
     $(window).scroll(function() {
