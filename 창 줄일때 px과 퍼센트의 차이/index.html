@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+/* 리셋 */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+a {color: inherit; text-decoration: inherit;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+button {background: none; border: none;}
+img {vertical-align: middle;}
+
+
+
+/* 시작 */
+.con01{
+width: 100%;
+margin-bottom: 50px;
+background-color: rgb(53, 118, 175);
+}
+
+.inner01{
+    width: 1700px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: red;
+}
+
+
+.con02{
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.inner02{
+    width: 88.5%;
+    height: 200px;
+    margin: 0 auto;
+    background-color: red;
+}
+</style>
+
+
+
+<body>
+
+    <!-- 픽셀로 inner 주고 가운데로 위치 시키고 창을 줄이면 양 옆에 여백이 서서히 사라지면서 줄어듦 -->
+    <section class="con01">
+        <div class="inner01"></div>
+    </section>
+
+
+    <!-- 퍼센트로 inner 주고 가운데로 위치 시키고 창을 줄이면 양 옆에 여백은 계속 생기면서 줄어듦 -->
+    <section class="con02">
+        <div class="inner02"></div>
+    </section>
+</body>
+</html>

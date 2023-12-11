@@ -29,6 +29,9 @@ body{
     height: 2000px;
 }
 
+
+
+/* header */
 header{
     position: fixed;
     width: 100%;
@@ -134,3 +137,8 @@ header .gnb .menuBox.on li:nth-child(3) a {
 header .gnb .menuBox.on li:nth-child(4) a {
     transition-delay: 0.15s;
 }
+
+
+
+/* visual */
+

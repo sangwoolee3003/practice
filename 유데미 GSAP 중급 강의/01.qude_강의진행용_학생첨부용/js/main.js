@@ -20,3 +20,6 @@
     menuOpen.addEventListener('click', function(){ //내방법
         menuBox.classList.toggle('on');
     });
+
+
+
