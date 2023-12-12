@@ -42,17 +42,28 @@ header.on{
     justify-content: space-between;
 }
 
+h1.logo{
+    font-size: 30px;
+    color: #797979;
+}
+
 .gnb{
     display: flex;
-    justify-content: space-between;
-    text-align: center;
-    width: 600px;
+    /* justify-content: space-between; */
+    /* text-align: center; */
+    /* width: 600px; */
     /* background-color: antiquewhite; */
+}
+
+
+.deps_01{
+
 }
 
 .deps_01 > a{
     color: #464646;
     font-weight: bold;
+    padding: 0 30px;
 }
 
 
@@ -64,6 +75,8 @@ header.on{
     line-height: 60px;
     font-size: 15px;
     font-weight: 500;
+    padding: 0 30px;
+
 }
 
 .deps_02.on{
@@ -101,7 +114,7 @@ header.on{
     /* width: 150px; */
     height: 50px;
     border-radius: 5px;
-    border: 1px solid #b3b3b3;
+    border: 1px solid transparent;
     padding: 0 10px ;
     background-color: #F2F3F4;
 }
@@ -111,7 +124,9 @@ header.on{
     right: 10px;
 }
 
-
+.serching_icon{
+    display: none;
+}
 
 
 /* con01 부분 */
@@ -127,16 +142,9 @@ section{
     border-bottom: 1px solid #eee;
 }
 
+
 .inner{
-    /* width: 1700px; */
     width: 90%;
-    padding-top: 200px;
-    /* background-color: antiquewhite; */
-}
-
-.inner{
-    width: 1600px;
-
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -218,10 +226,46 @@ section{
 
 
 
+/* con03 */
+
+.book_box{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.book_box li{
+    width: 30%;
+    margin-bottom: 50px;
+    background-color: #eee;
+
+}
+
+.book_box li a{
+    display: block;
+
+}
+
+
+.book_box li a p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.book_box li a span{
+    display:inline-block;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #464646;
+
+
+}
+
+
+
 @media screen and (max-width:1700px) {
     .inner{
-        width: 90%;
-
         flex-wrap: wrap;
     }
 
@@ -238,6 +282,17 @@ section{
 
 }
 
+
+@media screen and (max-width:1200px) {
+    .serching{
+        display: none;
+    }
+
+    .serching_icon{
+        display: block;
+    }
+
+}
 
 
 @media screen and (max-width:1000px){
