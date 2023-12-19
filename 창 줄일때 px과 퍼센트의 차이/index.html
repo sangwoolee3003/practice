@@ -131,6 +131,110 @@
         margin: 0 auto;
         background-color: red;
     }
+
+
+
+    /* con03 */
+    .con03{
+        width: 100%;
+        background-color: aqua;
+        margin-top: 50px;
+    }
+
+    .inner_con03{
+        width: 80%;
+        margin: 0 auto;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left{
+        width: 20%;
+        height: 200px;
+        background-color: beige;
+    }
+
+    .right{
+        width:20%;
+        height: 200px;
+        background-color: beige;
+    }
+
+
+
+        /* con04 */
+    .con04{
+        width: 100%;
+        background-color: aqua;
+        margin-top: 50px;
+    }
+
+    .inner_con04{
+        width: 80%;
+        margin: 0 auto;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left2{
+        width: 200px;
+        height: 200px;
+        background-color: beige;
+    }
+
+    .right2{
+        width:200px;
+        height: 200px;
+        background-color: beige;
+    }
+
+
+
+    /* 테스트 */
+    /* 이렇게하면 왼쪽 오른쪽 퍼센트로 주면 창줄일떄 플랙스 기운데 공백 안먹힘 */
+    .test{
+        width: 100%;
+        padding: 50px 0px;
+        background-color: antiquewhite;
+        margin-top: 200px;
+        font-size: 1vw;
+    }
+
+    .test_inner{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .imgbox{
+        width: 50%;
+    }
+
+    .imgbox img{width: 100%;}
+
+    .txtbox{
+        width: 40%;
+        background-color: aqua;
+    }
+
+
+    
+    @media screen and (max-width:1000px) {
+        .imgbox{
+            width: 100%;
+        }
+
+        .txtbox{
+            width: 100%;
+            font-size: 3vw;
+            margin-top: 30px;
+        }
+    }
+
 </style>
 
 
@@ -147,6 +251,39 @@
     <section class="con02">
         <div class="inner02"></div>
     </section>
+
+
+    <!-- 각 왼쪽 오른쪽에 퍼센트로 주면 창 줄일때 가운데 공간 안먹힘 -->
+    <section class="con03">
+        <div class="inner_con03">
+            <div class="left">con03</div>
+            <div class="right">con03</div>
+        </div>
+    </section>
+
+    <!-- 각 왼쪽 오른쪽에 픽셀로 주면 창 줄일때 가운데 공간 먹힘-->
+    <section class="con04">
+        <div class="inner_con04">
+            <div class="left2">con04</div>
+            <div class="right2">con04</div>
+        </div>
+    </section>
+
+
+
+    <section class="test">
+        <div class="test_inner">
+            <div class="imgbox">
+                <img src="img/cate_class3.png" alt="">
+            </div>
+            <div class="txtbox">
+                <h1>메테우스자산운용이 추천합니다.</h1>
+            </div>
+        </div>
+    </section>
+
+
+
 </body>
 
 </html>

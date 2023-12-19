@@ -45,6 +45,9 @@ body{
 
 .swiper-slide.visual_item img{
     width: 100%;
+
+    /* 넓이 auto 주면 안쪼그라짐 */
+    /* width: auto; */
 }
 
 
@@ -55,3 +58,10 @@ body{
 .visual_slide .swiper-scrollbar-drag{
     background-color: rgb(255, 0, 0);
 }
+
+
+/* @media screen and (max-width:1200px) {
+    .swiper-slide.visual_item img {width: auto;}
+    
+} */
+
