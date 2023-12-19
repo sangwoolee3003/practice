@@ -8,6 +8,12 @@ $(function(){
             el: ".swiper-scrollbar.scrolled",
             // hide: true,
         },
+
+        pagination: {
+            el: ".swiper-pagination.navigate",
+            clickable: true,
+        },
+        
     });
 
 

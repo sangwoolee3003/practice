@@ -5,6 +5,7 @@ $(function(){
     var swiper_con01 = new Swiper(".mySwiper.con1", {
         slidesPerView: "auto",
         spaceBetween: 30,
+        centeredSlides : true,
         loop: true,
         // pagination: {
         //     el: ".swiper-pagination",

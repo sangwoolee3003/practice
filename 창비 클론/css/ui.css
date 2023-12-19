@@ -33,6 +33,7 @@ header{
     left: 0;
     top: 0;
     border-bottom: 1px solid #eee;
+    z-index: 999;
 }
 
 header.on{
@@ -183,7 +184,6 @@ section{
 
 .list_box{
     width: 1050px;
-
 }
 
 .list_box li{
